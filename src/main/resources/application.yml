@@ -1,0 +1,5 @@
+server:
+  port: 8585
+logging:
+  level:
+    com.saeed.ml: INFO
