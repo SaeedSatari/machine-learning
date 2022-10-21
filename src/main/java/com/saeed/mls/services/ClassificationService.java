@@ -20,10 +20,11 @@ import java.io.InputStream;
 @Slf4j
 @Service
 public class ClassificationService {
-    Criteria<Image, Classifications> criteria = Criteria.builder()
-            .setTypes(Image.class, Classifications.class)
-            .build();
     public ClassificationDTO classifyImage(InputStream inputStream, String fileName) throws Exception {
+        Criteria<Image, Classifications> criteria = Criteria.builder()
+                .setTypes(Image.class, Classifications.class)
+                .build();
+
         log.debug("Processing fileName={}", fileName);
         Image image = ImageFactory.getInstance().fromInputStream(inputStream);
 
