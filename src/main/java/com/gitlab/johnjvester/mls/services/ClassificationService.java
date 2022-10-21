@@ -1,4 +1,4 @@
-package com.saeed.ml.services;
+package com.gitlab.johnjvester.mls.services;
 
 import ai.djl.inference.Predictor;
 import ai.djl.modality.Classifications;
@@ -7,9 +7,9 @@ import ai.djl.modality.cv.ImageFactory;
 import ai.djl.repository.zoo.Criteria;
 import ai.djl.repository.zoo.ModelZoo;
 import ai.djl.repository.zoo.ZooModel;
-import com.saeed.ml.models.ClassificationResults;
-import com.saeed.ml.models.dto.ClassificationDTO;
-import com.saeed.ml.utils.ClassificationUtils;
+import com.gitlab.johnjvester.mls.models.ClassificationDTO;
+import com.gitlab.johnjvester.mls.models.ClassificationResults;
+import com.gitlab.johnjvester.mls.utils.ClassificationUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -40,5 +40,3 @@ public class ClassificationService {
         }
     }
 }
-
-

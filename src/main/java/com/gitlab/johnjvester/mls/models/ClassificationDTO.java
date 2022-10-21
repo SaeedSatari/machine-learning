@@ -1,19 +1,19 @@
-package com.saeed.ml.models.dto;
+package com.gitlab.johnjvester.mls.models;
 
-import com.saeed.ml.models.Classification;
-import com.saeed.ml.models.enums.Type;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 public class ClassificationDTO {
     private String fileName;
     private String value;
     private double probability;
-    private Type type;
+    private String type;
 
     public ClassificationDTO(Classification classification, String fileName) {
         this.fileName = fileName;

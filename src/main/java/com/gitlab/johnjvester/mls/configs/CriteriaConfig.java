@@ -1,4 +1,4 @@
-package com.saeed.ml.configs;
+package com.gitlab.johnjvester.mls.configs;
 
 import ai.djl.Application;
 import ai.djl.modality.Classifications;
@@ -17,6 +17,7 @@ import org.springframework.stereotype.Component;
 public class CriteriaConfig {
     private static final int RESIZE_WIDTH = 224;
     private static final int RESIZE_HEIGHT = 224;
+
     private static final String DEFAULT_LAYERS_KEY = "layers";
     private static final String DEFAULT_LAYERS_VALUE_STRING = "50";
 
@@ -41,4 +42,3 @@ public class CriteriaConfig {
         return criteria;
     }
 }
-

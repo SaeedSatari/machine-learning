@@ -1,4 +1,4 @@
-package com.saeed.ml.models;
+package com.gitlab.johnjvester.mls.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +14,7 @@ import java.util.NoSuchElementException;
 @NoArgsConstructor
 @Data
 public class ClassificationResults {
-    private Classification[] classifications;
+    Classification[] classifications;
 
     public Classification getBest() {
         if (ArrayUtils.isNotEmpty(classifications)) {
@@ -22,6 +22,7 @@ public class ClassificationResults {
             return classificationList.stream().max(Comparator.comparing(Classification::getProbability))
                     .orElseThrow(NoSuchElementException::new);
         }
+
         return null;
     }
 }

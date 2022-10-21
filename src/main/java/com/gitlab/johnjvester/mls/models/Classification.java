@@ -1,4 +1,4 @@
-package com.saeed.ml.models;
+package com.gitlab.johnjvester.mls.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

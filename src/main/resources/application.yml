@@ -2,4 +2,4 @@ server:
   port: 8585
 logging:
   level:
-    com.saeed.ml: INFO
+    com.gitlab.johnjvester.mls: INFO

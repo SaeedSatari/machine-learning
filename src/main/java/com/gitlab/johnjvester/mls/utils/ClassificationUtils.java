@@ -1,15 +1,14 @@
-package com.saeed.ml.utils;
+package com.gitlab.johnjvester.mls.utils;
 
 import ai.djl.modality.Classifications;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.saeed.ml.models.Classification;
-import com.saeed.ml.models.ClassificationResults;
+import com.gitlab.johnjvester.mls.models.Classification;
+import com.gitlab.johnjvester.mls.models.ClassificationResults;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public final class ClassificationUtils {
-    private ClassificationUtils() {
-    }
+    private ClassificationUtils() { }
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -22,4 +21,3 @@ public final class ClassificationUtils {
         throw new NullPointerException("classifications cannot be null");
     }
 }
-
