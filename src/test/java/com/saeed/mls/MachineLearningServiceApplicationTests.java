@@ -1,4 +1,4 @@
-package com.gitlab.johnjvester.mls;
+package com.saeed.mls;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

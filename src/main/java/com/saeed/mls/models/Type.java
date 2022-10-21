@@ -1,4 +1,4 @@
-package com.gitlab.johnjvester.mls.models;
+package com.saeed.mls.models;
 
 import java.util.Arrays;
 import java.util.Collection;

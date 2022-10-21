@@ -1,4 +1,4 @@
-package com.gitlab.johnjvester.mls;
+package com.saeed.mls;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
