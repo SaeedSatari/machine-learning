@@ -18,7 +18,6 @@ public final class ClassificationUtils {
             log.debug("classifications.toJson()={}", classifications.toJson());
             return new ClassificationResults(objectMapper.readValue(classifications.toJson(), Classification[].class));
         }
-
         throw new NullPointerException("classifications cannot be null");
     }
 }

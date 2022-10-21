@@ -10,13 +10,11 @@ import ai.djl.repository.zoo.ZooModel;
 import com.saeed.mls.models.ClassificationDTO;
 import com.saeed.mls.models.ClassificationResults;
 import com.saeed.mls.utils.ClassificationUtils;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.InputStream;
 
-@RequiredArgsConstructor
 @Slf4j
 @Service
 public class ClassificationService {
